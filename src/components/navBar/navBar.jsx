@@ -95,5 +95,6 @@ class NavBar extends Component {
 
 export default NavBar;
 
+// homework
 // JS arrow function this context
 //

@@ -5,6 +5,7 @@ import NavBar from "./components/navBar/navBar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Catalog from "./components/catalog/catalog";
+import Todo from "./components/todo/todo";
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
 
       <div className="container">
         <Catalog></Catalog>
+
+        <hr></hr>
+        {/* <Todo></Todo> */}
       </div>
 
       <Footer></Footer>

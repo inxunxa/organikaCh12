@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class QuantityPicker extends Component {
   state = {
     quantity: 1,
-    minimum: 1,
+    minimum: this.props.minimum,
   };
 
   render() {
@@ -29,14 +29,15 @@ class QuantityPicker extends Component {
     if (current !== this.state.minimum) {
       current -= 1;
       this.setState({ quantity: current });
+      this.props.onValueChange(current);
     }
   };
 
   increase = () => {
     let current = this.state.quantity;
     current += 1;
-
     this.setState({ quantity: current });
+    this.props.onValueChange(current);
   };
 }
 

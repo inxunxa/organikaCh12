@@ -37,20 +37,13 @@ class Todo extends Component {
   };
 
   addTodo = () => {
-    var list = [...this.state.todos];
-    list.push(this.state.todoText);
-    this.setState({ todos: list, todoText: "" });
+    // dispatch the action, send the text as payload
+    // this.props.actionNameHere(this.state.todoText)
   };
 }
 
-export default Todo;
+// create the mapStateToProps
 
-/**
- * steps:
- * 1 - click on button
- * 2 - console log the text from the state
- * 3 - push that text into the state
- * 4 - clear the input (clear the state.todoText)
- * 5 - map the state.todos to li
- *
- */
+
+// connect the component
+export default Todo;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class QuantityPicker extends Component {
   state = {
-    quantity: 1,
+    quantity: this.props.minimum,
     minimum: this.props.minimum,
   };
 
